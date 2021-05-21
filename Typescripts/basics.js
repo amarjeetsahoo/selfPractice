@@ -8,13 +8,12 @@ var person = {
 };
 var Role;
 (function (Role) {
-    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["Admin"] = 0] = "Admin";
     Role[Role["Read_only"] = 1] = "Read_only";
     Role[Role["Author"] = 2] = "Author";
 })(Role || (Role = {}));
 ;
 var p = {
-    role: Role.ADMIN
+    role: Role.Admin
 };
-console.log(person);
-console.log(p);
+console.log(p.role);
