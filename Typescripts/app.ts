@@ -1,17 +1,14 @@
-// const person: {
-//     name: string;
-//     age: number;
-// } = {
-const person = {
-    name: 'Max',
-    age: 30
-};
+function comb(input1: number | string, input2: number | string) {
+    let result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    } else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
+}
+const combine = comb(30, 25);
+console.log(combine);
 
-enum Role { ADMIN, Read_only, Author };
-
-const p = {
-    role: Role.ADMIN
-};
-
-console.log(person);
-console.log(p);
+const combine1 = comb('Max', 'Ama');
+console.log(combine1);

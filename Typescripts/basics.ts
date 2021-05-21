@@ -10,3 +10,23 @@ let num: number;
 num = 5;
 console.log(typeof (num));
 console.log(num);
+
+// 2
+
+// const person: {
+//     name: string;
+//     age: number;
+// } = {
+const person = {
+    name: 'Max',
+    age: 30
+};
+
+enum Role { ADMIN, Read_only, Author };
+
+const p = {
+    role: Role.ADMIN
+};
+
+console.log(person);
+console.log(p);
