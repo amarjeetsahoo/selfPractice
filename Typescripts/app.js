@@ -1,14 +1,12 @@
-function comb(input1, input2) {
-    var result;
-    if (typeof input1 === 'number' && typeof input2 === 'number') {
-        result = input1 + input2;
-    }
-    else {
-        result = input1.toString() + input2.toString();
-    }
-    return result;
+function add(n1, n2) {
+    return n1 + n2;
 }
-var combine = comb(30, 25);
-console.log(combine);
-var combine1 = comb('Max', 'Ama');
-console.log(combine1);
+// function printResult(num: number): void {
+//     console.log('Result: ' + num);
+// }
+// console.log(printResult(add(5, 4)));
+function printResult(num) {
+    console.log('Result: ' + num);
+    return;
+}
+printResult(add(5, 4));
