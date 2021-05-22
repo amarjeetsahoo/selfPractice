@@ -10,3 +10,7 @@ function printResult(num) {
     return;
 }
 printResult(add(5, 4));
+var combineResult;
+combineResult = add;
+// combineResult = printResult;
+console.log(combineResult(18, 2));

@@ -11,3 +11,10 @@ function printResult(num: number): undefined {
     return;
 }
 printResult(add(5, 4));
+
+let combineResult: (a: number, b: number) => number;
+
+combineResult = add;
+// combineResult = printResult;
+
+console.log(combineResult(18, 2));
