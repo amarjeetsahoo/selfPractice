@@ -1,4 +1,7 @@
-function comb(input1: number | string, input2: number | string) {
+type Combinable = number | string;
+
+function comb(input1: Combinable,
+    input2: Combinable) {
     let result;
     if (typeof input1 === 'number' && typeof input2 === 'number') {
         result = input1 + input2;
