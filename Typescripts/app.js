@@ -9,8 +9,15 @@ function printResult(num) {
     console.log('Result: ' + num);
     return;
 }
+function addAndHandle(a, b, cb) {
+    var result = a + b;
+    cb(result);
+}
 printResult(add(5, 4));
 var combineResult;
 combineResult = add;
 // combineResult = printResult;
 console.log(combineResult(18, 2));
+addAndHandle(10, 20, function (result) {
+    console.log(result);
+});
