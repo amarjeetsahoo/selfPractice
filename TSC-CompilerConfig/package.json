@@ -1,0 +1,15 @@
+{
+  "name": "tsc-compilerconfig",
+  "version": "1.0.0",
+  "description": "example of config and using typescript-complier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "Amarjeet Sahoo",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
