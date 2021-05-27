@@ -12,7 +12,7 @@ module.exports = {
     "google",
     "plugin:@typescript-eslint/recommended",
   ],
-  parser: "@typescript-eslint/parser",
+  parser: "babel-eslint",
   parserOptions: {
     project: ["tsconfig.json", "tsconfig.dev.json"],
     sourceType: "module",
