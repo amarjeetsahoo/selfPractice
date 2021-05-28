@@ -5,7 +5,7 @@ const add = (a: number, b: number): number => a + b;
 
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
     console.log(add(5, 3));
-    res.send("<h1>HelloWorld! This is Typescript!!</h1>")
+    res.send("<h1>HelloWorld! This is Typescript!!</h1>").status(200);
 });
 
 app.listen(5000, () => {
