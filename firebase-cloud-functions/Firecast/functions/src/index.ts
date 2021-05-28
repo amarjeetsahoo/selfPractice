@@ -12,17 +12,13 @@ admin.initializeApp({
   databaseURL: "https://firecast-app-b5ee6.firebaseio.com/",
 });
 
-// Start writing Firebase Functions
-// https://firebase.google.com/docs/functions/typescript
-
-export const helloWorld = functions.https.onRequest((request, response) => {
-  admin.firestore().doc("cities/ctc").get()
-      .then((snapshot) => {
-        const data = snapshot.data();
-        response.send(data);
-      })
-      .catch((error) => {
-        console.log(error);
-        response.status(500).send(error);
-      });
+export const getData = functions.https.onRequest(async (request, response) => {
+  try {
+    const snapshot = await admin.firestore().doc("cities/ctc").get();
+    const data = snapshot.data();
+    response.send(data);
+  } catch (error) {
+    console.log(error);
+    response.status(500).send(error);
+  }
 });
