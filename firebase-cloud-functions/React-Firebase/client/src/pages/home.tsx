@@ -10,7 +10,7 @@ const HomePage: React.FunctionComponent<IPageProps> = props => {
             <Card>
                 <CardBody>
                     <p>
-                        Welcome to this page that is protected by Friebase auth!<br />
+                        Welcome to this page that is protected by Firebase auth!<br />
                         Change your password <Link to="/change">here</Link>.
                     </p>
                     <p>
