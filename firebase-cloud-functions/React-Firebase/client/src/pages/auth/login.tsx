@@ -62,6 +62,7 @@ const LoginPage: React.FunctionComponent<IPageProps> = props => {
             </Button>
             <small>
                 <p className='m-1 text-center'>Don't have an account? <Link to="/login">Register.</Link></p>
+                <p className='m-1 text-center'><Link to="/forgot">Forgot your password?</Link></p>
             </small>
             <ErrorText error={error} />
       </AuthContainer>
