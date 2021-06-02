@@ -3,6 +3,7 @@ import ChangePasswordPage from "../pages/auth/change";
 import LoginPage from "../pages/auth/login";
 import RegisterPage from "../pages/auth/register";
 import HomePage from "../pages/home";
+import LogoutPage from '../pages/auth/logout';
 
 const routes: IRoute[] = [
     {
@@ -31,6 +32,13 @@ const routes: IRoute[] = [
         exact: true,
         component: ChangePasswordPage,
         name: 'Change Password Page',
+        protected: true
+    },
+    {
+        path: '/logout',
+        exact: true,
+        component: LogoutPage,
+        name: 'Logout Page',
         protected: true
     }
 ];
