@@ -3,6 +3,9 @@ import ChangePasswordPage from "../pages/auth/change";
 import LoginPage from "../pages/auth/login";
 import RegisterPage from "../pages/auth/register";
 import HomePage from "../pages/home";
+import LogoutPage from '../pages/auth/logout';
+import ForgotPasswordPage from '../pages/auth/forgot';
+import ResetPasswordPage from '../pages/auth/reset';
 
 const routes: IRoute[] = [
     {
@@ -32,6 +35,27 @@ const routes: IRoute[] = [
         component: ChangePasswordPage,
         name: 'Change Password Page',
         protected: true
+    },
+    {
+        path: '/logout',
+        exact: true,
+        component: LogoutPage,
+        name: 'Logout Page',
+        protected: true
+    },
+    {
+        path: '/forgot',
+        exact: true,
+        component: ForgotPasswordPage,
+        name: 'Forgot Password Page',
+        protected: false
+    },
+    {
+        path: '/reset',
+        exact: true,
+        component: ResetPasswordPage,
+        name: 'Reset Password Page',
+        protected: false
     }
 ];
 
